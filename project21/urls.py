@@ -24,5 +24,13 @@ urlpatterns = [
     path('insert_webpage/',insert_webpage,name='insert_webpage'),
     path('insert_accessRecordss/',insert_accessRecordss,name='insert_accessRecordss'),
     path('display_topic/',display_topic,name='display_topic'),
+    path('display_webpage/',display_webpage,name='display_webpage'),
+    path('display_AccessRecords/',display_AccessRecords,name='display_AccessRecords'),
+    path('update_Webpage/',update_Webpage,name='update_Webpage'),
+    path('delete_webpage/',delete_webpage,name='delete_webpage'),
+    path('delete_Book/',delete_Book,name='delete_Book'),
+
+    path('insert_webpage/',insert_webpage,name='insert_webpage'),
+    path('select_multiple/',select_multiple,name='select_multiple'),
   
 ]

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <table border="3px">
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        {% for to in BKO %}
+            <tr>
+                <td>{{ to.Name}}</td>
+                <td>{{ to.Price}}</td>
+
+
+            </tr>   
+        {% endfor %}         
+        </table>
+    </center>
+
+</body>
+</html>

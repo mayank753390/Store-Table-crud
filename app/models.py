@@ -17,7 +17,17 @@ class Webpage(models.Model):
 
      
 
-class AccessRecords(models.Model):
-    webpage = models.ForeignKey(Webpage, on_delete=models.CASCADE)  
+class AccessRecords(models.Model):    
+    name = models.ForeignKey(Webpage, on_delete=models.CASCADE)  
     author = models.CharField(max_length=100)
     date = models.DateField()
+    def __str__(self):
+        return self.author
+    
+class Book(models.Model):
+    Name = models.CharField(max_length=34)
+    Price=models.DecimalField(max_digits=20,decimal_places=2)   
+    def __str__(self):
+        return self.name 
+
+
