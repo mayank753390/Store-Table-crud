@@ -154,6 +154,7 @@ def insert_webpage(request):
     return render(request,'insertdata_Form.html',d)  
 
 
+
 def select_multiple(request):
     LTO=Topic.objects.all()
     d={'LTO':LTO}
@@ -172,4 +173,8 @@ def select_multiple(request):
     return render(request,'select_multipe.html',d)          
 
 
+def checkbox(request):
+    LTO=Topic.objects.all()
+    d={'LTO':LTO}
 
+    return render(request,'checkbox.html',d)
